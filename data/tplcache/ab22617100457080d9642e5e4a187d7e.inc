@@ -1,0 +1,1 @@
+<li class="clone" style="float: left; width: 146px;"> [field:image/] </li>

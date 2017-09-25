@@ -1,0 +1,636 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta content="{dede:global.cfg_keywords/}" name="keywords">
+<meta content="{dede:global.cfg_description/}" name="description">
+<meta name="author" content="order by dede58.com" />
+<meta name="360-site-verification" content="8b4a67af7884c713c8b364d795d5358d">
+<script charset="utf-8" src="{dede:global.cfg_templets_skin/}/style/v.js"></script><script src="{dede:global.cfg_templets_skin/}/style/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script language="javascript">var user_id = 0;var forwardMethod = '';</script>
+<script src="{dede:global.cfg_templets_skin/}/style/jquery.blockUI.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/jquery.form.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/sidebar-follow-jquery.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/common.js" type="text/javascript"></script>
+<link href="{dede:global.cfg_templets_skin/}/style/wenda.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/style/style.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/style/other.css" type="text/css" rel="stylesheet">
+<link rel="icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon">
+</head>
+<body style="overflow-x:hidden;">
+{dede:include filename="head.htm"/}
+<div class="main">
+  <div class="index_menu">
+    <div class="shu_menu">
+      <style type="text/css">
+					.shumenu01{
+						position: absolute;
+						z-index: 99999;
+						overflow: hidden;
+						margin-left: 220px;
+						top:346px;
+						padding: 0 0px 0 20px;
+						background: none;
+						background-color: #e5e5e5;
+					}
+					.shumenu01 a{display:inline; width:100%;padding-left:0px!important;}
+					
+				</style>
+      <ul class="menuWrap">
+        <li> <a href="/lx/cz/" target="_self">教育类型</a>
+          <div class="shumenu01" style="display: none;">
+            <ul>
+              {dede:channel row='10' type ='son' typeid ='5'   }
+              <li><a href="[field:typelink/]" target="_blank">[field:typename/]</a></li>
+              {/dede:channel}
+            </ul>
+          </div>
+        </li>
+        <li> <a href="/fl/yg/" target="_self">留学国家</a>
+          <div class="shumenu01" style="display: none;">
+            <ul>
+              <li> {dede:channel row='30'  type ='son' typeid ='1'   } <a href="[field:typelink/]" target="_blank">[field:typename/]</a> {/dede:channel} </li>
+            </ul>
+          </div>
+        </li>
+        <li class="/xxjs/"> <a href="" target="_blank">留学院校</a>
+          <div class="shumenu01" style="display: none;">
+            <ul>
+              {dede:arclist row='7' titlelen='36' typeid='10'       }
+              <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </li>
+        <li class=""> <a href="/hwyx/" target="_blank">海外游学</a>
+          <div class="shumenu01" style="display: none;">
+            <ul>
+              <li> {dede:channel row='20'  type ='son' typeid ='12'   } <a href="[field:typelink/]" target="_blank">[field:typename/]</a> {/dede:channel} </li>
+            </ul>
+          </div>
+        </li>
+        <li> <a href="/dxly/" target="_blank">海外冬夏令营</a>
+          <div class="shumenu01" style="display: none;">
+            <ul>
+              {dede:arclist row='7' titlelen='24' typeid='13'       }
+              <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </li>
+        <li> <a href="/qzdb/" target="_blank">签证代办</a>
+          <div class="shumenu01" style="display: none;">
+            <ul>
+              {dede:arclist row='7' titlelen='24' typeid='14'       }
+              <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </li>
+        <li> <a target="_blank" href="/qtyw/">其它业务</a>
+          <div class="shumenu01" style="display: none;">
+            <ul>
+              {dede:arclist row='7' titlelen='24' typeid='19'       }
+              <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <script language="javascript">
+				jQuery(function(){
+					jQuery(".menuWrap li").mouseover(function(){
+						jQuery(".shumenu01").hide();
+						jQuery(".menuWrap .moren_menu").removeClass("moren_menu");
+						jQuery(this).find(".shumenu01").show();
+						jQuery(this).addClass("moren_menu");
+					}).mouseout(function(){
+						jQuery(".shumenu01").hide();	
+						jQuery(".menuWrap .moren_menu").removeClass("moren_menu");
+					});
+				});
+				</script> 
+    </div>
+  </div>
+  <div class="jiaodian"> 
+    <script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=765;
+var swf_height=300;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0xffffff||0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+{dede:arclist flag='f' row='20'}
+linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
+picarr[[field:global.autoindex/]]  = "[field:litpic/]";
+
+{/dede:arclist}
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="{dede:global.cfg_templeturl /}/liuxue/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+document.write('<embed src="{dede:global.cfg_templeturl /}/liuxue/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+</script> 
+  </div>
+  <div class="redian_xx">
+    <div class="redian_l">
+      <h1 class="redian01">培风简介</h1>
+      <div class="redian02"><a href="/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201606011006144841.jpg" alt="" width="205" height="130"></a></div>
+      <ul class="redian03">
+        <p>培风文化传播有限公司（下文简称“培风”）成立于2013年，本公司由留学行业资深人士和优秀海外归国人才共同成立...<span align="center"><a href="/a/gypf/">【了解更多】</a></span></p>
+      </ul>
+    </div>
+    <div class="index_zixun">
+      <div class="zixun"><b>公司新闻<span><a href="/gsxw/" target="_blank">更多&gt;&gt;</a></span></b></div>
+      <div class="zixun01">
+        <div class="zixun_xin">
+          <div class="zixun_xin_img"><img src="{dede:global.cfg_templets_skin/}/images/201606080940119428.jpg" alt="" width="215" height="85"></div>
+          {dede:arclist row='1' titlelen='54' typeid='21'      flag ='c' }
+          <div class="zixun_xin_text">
+            <h3 class="zixun_title"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+            <p class="zixun_neir"> [field:description function="cn_substr(@me,200)"/]... </p>
+          </div>
+          {/dede:arclist} </div>
+        <div class="zixun_list">
+          <ul class="zixun_list_01">
+            {dede:arclist row='6' titlelen='50' typeid='21'      noflag ='c' }
+            <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+            {/dede:arclist}
+            <div class="clear"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="redian_xx">
+    <div class="index_l">
+      <div class="guojia">
+        <div class="guojia_menu">
+          <ul>
+            <li class="black01"><a href="javascript:void(0);" target="_self">英国</a></li>
+            <li><a href="javascript:void(0);" target="_self">美国</a></li>
+            <li><a href="javascript:void(0);" target="_self">澳大利亚</a></li>
+            <li><a href="javascript:void(0);" target="_self">日本</a></li>
+            <li><a href="javascript:void(0);" target="_self">西班牙</a></li>
+            <li><a href="javascript:void(0);" target="_self">荷兰</a></li>
+          </ul>
+        </div>
+        <div class="guojia01 guojiaWrap1">
+          <div>
+            <div class="guojia_l"><a href="/fl/yg/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201606031046524285.jpg" alt="" width="230" height="180"></a>
+              <div class="guojia_p"><a href="/fl/yg/" target="_blank">英国留学中心</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='2'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='2'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="/fl/mg/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201605310931466322.jpg" alt="" width="230" height="180"></a>
+              <div class="guojia_p"><a href="/fl/mg/" target="_blank">美国留学中心</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='3'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='3'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="/fl/adly/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201605251029221046.png" alt="" width="230" height="180"></a>
+              <div class="guojia_p"><a href="/fl/adly/" target="_blank">澳大利亚留学中心</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='4'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='4'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="/fl/rb/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201606071013166586.jpg" alt="" width="230" height="180"></a>
+              <div class="guojia_p"><a href="/fl/rb/" target="_blank">日本留学中心</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='45'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='45'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="/fl/xby/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201606031053002585.jpg" alt="" width="230" height="180"></a>
+              <div class="guojia_p"><a href="/fl/xby/" target="_blank">西班牙留学中心</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='46'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='46'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="/fl/hn/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201503251742186366.jpg" alt="新加坡留学求职面试" width="230" height="180"></a>
+              <div class="guojia_p"><a href="/fl/hn/" target="_blank">新加坡留学求职面试</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='47'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='47'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201412241620474106.jpg" alt="香港高校不承认内地大学英语六级成绩" width="230" height="180"></a>
+              <div class="guojia_p"><a href="" target="_blank">香港高校不承认内地大学英语六级成绩</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='2'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='2'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+				jQuery(".guojia").SuperSlide({titCell:".guojia_menu li",mainCell:".guojiaWrap1",titOnClassName:"black01"});
+			</script>
+      <div class="guojia pad01">
+        <div class="guojia_menu01">
+          <ul>
+            <li class="black01"><a href="javascript:void(0);" target="_self">意大利</a></li>
+            <li><a href="javascript:void(0);" target="_self">其它国家</a></li>
+          </ul>
+        </div>
+        <div class="guojia01 guojiaWrap2">
+          <div>
+            <div class="guojia_l"><a href="/fl/ydl/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201412241620474106.jpg" alt="" width="230" height="180"></a>
+              <div class="guojia_p"><a href="/fl/ydl/" target="_blank">意大利留学中心</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='48'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='48'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="/fl/qt/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201501041637283237.jpg" alt="" width="230" height="180"></a>
+              <div class="guojia_p"><a href="/fl/qt/" target="_blank">其它国家留学中心</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='49'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='49'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201501041644025613.jpg" alt="2015寒假欧洲游学:文化欧洲，非凡梦幻之旅" width="230" height="180"></a>
+              <div class="guojia_p"><a href="" target="_blank">2015寒假欧洲游学:文化欧洲，非凡梦幻之旅</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='2'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='2'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201405281543248065.jpg" alt="费用低门槛低韩国留学成新趋势" width="230" height="180"></a>
+              <div class="guojia_p"><a href="" target="_blank">费用低门槛低韩国留学成新趋势</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='2'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='2'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+          <div style="display: none;">
+            <div class="guojia_l"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201405281552368722.jpg" alt="爱尔兰留学硕士奖学金申请条件介绍" width="230" height="180"></a>
+              <div class="guojia_p"><a href="" target="_blank">爱尔兰留学硕士奖学金申请条件介绍</a></div>
+            </div>
+            <div class="guojia_r"> {dede:arclist row='1' titlelen='34' typeid='2'      flag ='c' }
+              <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+              <p class="guojia_neir">[field:description function="cn_substr(@me,110)"/]... </p>
+              {/dede:arclist}
+              <ul class="list">
+                {dede:arclist row='10' titlelen='34' typeid='2'      noflag ='c' }
+                <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                {/dede:arclist}
+                <div class="clear"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+				jQuery(".pad01").SuperSlide({titCell:".guojia_menu01 li",mainCell:".guojiaWrap2",titOnClassName:"black01"});
+			</script> 
+    </div>
+    <div class="index_r">
+      <div class="index_yuan_sou">
+        <div class="zixun"><b>院校搜索</b></div>
+        <div class="index_yuan_sou01">
+          <form action="/xxjs/" method="get" target="_blank">
+            <select class="select01" name="country_id">
+              <option value="">国家</option>
+              
+              
+              
+              
+                            {dede:channel row='10'  type ='son' typeid ='1'   }
+														
+              
+              
+              
+              <option value="1">[field:typename/]</option>
+              
+              
+              
+              
+												{/dede:channel}
+                                                        
+													
+            
+            
+            
+            </select>
+            <select class="select02" name="category_id">
+              <option value="">类型</option>
+              
+              
+              
+              
+											        {dede:channel row='10'  type ='son' typeid ='5'   }
+														
+              
+              
+              
+              <option value="1">[field:typename/]</option>
+              
+              
+              
+              
+												{/dede:channel}
+													
+            
+            
+            
+            </select>
+            <select class="select03" name="fee">
+              <option value="">学费</option>
+              <option value="1">0-5万</option>
+              <option value="2">5-10万</option>
+              <option value="3">10-15万</option>
+              <option value="4">15-20万</option>
+              <option value="5">20-25万</option>
+              <option value="6">25-30万</option>
+              <option value="7">30万以上</option>
+            </select>
+            <input class="bn_12x" name="q" type="text" placeholder="请输入关键字搜索">
+            <div class="pg02">
+              <input type="image" src="{dede:global.cfg_templets_skin/}/images/pg03.jpg">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="index_yuan_tui">
+        <div class="zixun"><b>院校推荐<span><a href="/lxyx/" target="_blank">更多&gt;&gt;</a></span></b></div>
+        <div class="index_yuan_tui01">
+          <div class="tui_01 prevCell"><img src="{dede:global.cfg_templets_skin/}/images/errow01.png"></div>
+          <div class="tui_02">
+            <div class="tempWrap" style="overflow:hidden; position:relative; width:444px">
+              <ul class="collegeWrap" style="width: 2072px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -148px;">
+                {dede:arclist row='10' titlelen='20' typeid='34'   imgwidth='110' imgheight='99'   }
+                <li class="clone" style="float: left; width: 142px;"> <a href="[field:arcurl/]" target="_blank">[field:image/]</a>
+                  <p class="xiao_m"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                </li>
+                {/dede:arclist}
+              </ul>
+            </div>
+          </div>
+          <div class="tui_01 nextCell"><img src="{dede:global.cfg_templets_skin/}/images/errow02.png"></div>
+        </div>
+      </div>
+      <script type="text/javascript">
+				jQuery(".index_yuan_tui01").SuperSlide({ mainCell:".collegeWrap",vis:3,prevCell:".prevCell",nextCell:".nextCell",effect:"leftLoop"});
+			</script>
+      <div class="index_yuan_tui">
+        <div class="zixun"><a href="/yxxw/" target="_blank"><b>院校新闻</b></a><span><a href="/yxxw/" target="_blank">更多&gt;&gt;</a></span></div>
+        <ul class="list01">
+          {dede:arclist row='5' titlelen='60' typeid='35'       }
+          <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="redian_xx">
+    <div class="guanggao"> <a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/201406041723166847.jpg" alt="" width="230" height="285"></a></div>
+    <div class="youxue01"><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/youxue.jpg"></a>
+      <ul>
+        {dede:arclist row='10' titlelen='40' typeid='12'  orderby=typeid orderway=asc     }
+        <li class="youxue_co[field:global.autoindex/]"> <a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="youxue02"> <a  target="_blank">
+      <div class="youxue02_a"><br>
+      </div>
+      </a> <a  target="_blank">
+      <div class="youxue02_b"><br>
+      </div>
+      </a> </div>
+  </div>
+  <div class="redian honorContainer" style="margin-top:15px;">
+    <div class="zixun"><b>冬夏令营</b></div>
+    <div class="jh_lx_ryzs">
+      <div class="tempWrap" style="overflow:hidden; position:relative; width:980px">
+        <ul class="honorWrap" style="width: 4655px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -735px;">
+          {dede:arclist row='20'  typeid='13'   imgwidth='220' imgheight='148'   }
+          <li class="clone" style="float: left; width: 235px;"><a href="[field:arcurl/]" target="_blank">[field:image/]</a><br>
+            <a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+			jQuery(".honorContainer").SuperSlide({ mainCell:".honorWrap",vis:4,effect:"leftLoop",autoPlay:true, interTime:5000});
+		</script> 
+  </div>
+  <div class="clear"></div>
+  <div class="redian_xx">
+    <div class="index_wenda">
+      <div class="zixun"><a href="/lxwd/" target="_blank"><b>留学问答</b></a></div>
+      <ul class="index_wenda01">
+        {dede:arclist row='5' titlelen='36' typeid='36'   imgwidth='70' imgheight='70'   }
+        <li>
+          <div class="index_wenda01_tou">[field:image/]</div>
+          <div class="index_wenda01_neir">
+            <p class="index_wenda01_title"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+            <p class="index_wenda01_neir01">[field:description function="cn_substr(@me,60)"/]... </p>
+          </div>
+        </li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="index_anli">
+      <div class="zixun"><a href="/cgal/" target="_blank"><b>成功案例</b></a></div>
+      <ul class="index_anli01">
+        {dede:arclist row='3'  typeid='11'   imgwidth='110' imgheight='120' addfields='xuexiao,luqu,zhuanye' channelid='1'   }
+        <li>
+          <div class="index_anli_tou"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+          <div class="index_anli_xx">
+            <p class="xx01"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+            <p class="xx02">[field:xuexiao/]</p>
+            <p class="xx03">[field:luqu/]</p>
+            <p class="xx04">[field:zhuanye/]</p>
+          </div>
+        </li>
+        {/dede:arclist}
+      </ul>
+    </div>
+    <div class="index_zixun01">
+      <div class="bb_03 bb_pad"> <b>在线咨询</b> </div>
+      <div class="wenda_zixun_a">
+        <div class="wenda_zixun"><img src="{dede:global.cfg_templets_skin/}/images/zixun.jpg"></div>
+        <div class="pg01"><a href="/plus/diy.php?action=post&diyid=1" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/pg01.jpg"></a></div>
+        <div class="wenda_lianxi"><img src="{dede:global.cfg_templets_skin/}/images/lianxi.jpg"></div>
+        <div class="wenda_zixun_fs">
+          <ul>
+            <li class="icon_09"><a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qq/}&site=qq&menu=yes" style="cursor: pointer;">在线咨询</a></li>
+            <li class="icon_10"><a href="javascript:void(0);" target="_self" class="wxewm">微信</a></li>
+            <li style="margin-right:0;" class="icon_11"><a  target="_blank">微博</a></li>
+            <li class="icon_12"><a href="/a/lxwm/" target="_blank">地址</a></li>
+            <li class="icon_13"><a href="/a/lxwm/" target="_blank">传真</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="redian_xx">
+    <div class="zixun"><a href="/zjtd/" target="_blank"><b>专家团队</b></a><span><a href="/zjtd/" target="_blank">更多&gt;&gt;</a></span></div>
+    <div class="teamWrap">
+      <div class="tempWrap" style="overflow:hidden; position:relative; width:990px">
+        <ul class="tuandui" style="width: 3465px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -1155px;">
+          {dede:arclist row='20'  typeid='42'   imgwidth='123' imgheight='140'    }
+          <li class="clone" style="float: left; width: 145px;">
+            <div class="tuandui01"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+            <div class="tuandui02">
+              <p class="tuandui03"><a href="[field:arcurl/]" target="_blank">[field:title/]</a><br>
+                <a href="[field:arcurl/]"> <img src="/templets/liuxue/images/pg10.jpg"></a> </p>
+            </div>
+          </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+		jQuery(".redian_xx").SuperSlide({ mainCell:".tuandui",vis:6,effect:"leftLoop",autoPlay:true, interTime:2000});
+	</script>
+  <style type="text/css">
+	.hezuoWrap{width:1000;}
+	.hezuoWrap li{list-style-type:none; width:146px; margin:0 10px;}
+	.hezuo img{margin-right:0px!important;}
+	</style>
+  <div class="redian hezuoContainer" style="margin-top:15px;">
+    <div class="zixun"><b>合作伙伴</b><span><a href="/a/hzhb/" target="_blank">更多&gt;&gt;</a></span></div>
+    <div class="hezuo" style="padding:5px 0 0px 0px!important;">
+      <div class="tempWrap" style="overflow:hidden; position:relative; width:996px">
+        <div class="hezuoWrap" style="width: 2490px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -498px;"> {dede:arclist row='20'  typeid='43'   imgwidth='142' imgheight='60'   }
+          <li class="clone" style="float: left; width: 146px;"> [field:image/] </li>
+          {/dede:arclist} </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <script type="text/javascript">
+			jQuery(".hezuoContainer").SuperSlide({ mainCell:".hezuoWrap",vis:6,effect:"leftLoop",autoPlay:true, interTime:5000});
+		</script> 
+  </div>
+  <div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/}
+</div>
+</body>
+</html>

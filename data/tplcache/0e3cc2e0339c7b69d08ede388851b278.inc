@@ -1,0 +1,1 @@
+<div class="zhinan"><b>[field:typename /]本科<span><a href="[field:typelink /]" target="_blank">MORE</a></span></b></div>

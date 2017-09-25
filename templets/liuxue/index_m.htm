@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="telephone=no" name="format-detection" />
+<title>{dede:global.cfg_webname/}移动版</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/subpage.css" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/child_vip.css" />
+<script type="text/javascript" src="/m/skin/js/jquery.js"></script>
+<style>
+.head {
+	background: #52a7d1
+}
+.foot {
+	background: #52a7d1
+}
+.nav {
+	background: #bcd400 !important
+}
+.nav_color {
+	background: #52a7d1
+}
+</style>
+<link rel="stylesheet" type="text/css" href="/m/skin/css/master.css" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/swiper.css" />
+<script type="text/javascript" src="/m/skin/js/nav.js"></script>
+<script type="text/javascript" src="/m/skin/js/cart_icon.js"></script>
+<script type="text/javascript" src="/m/skin/js/swiper.js"></script>
+<script type="text/javascript" src="/m/skin/js/lihe.js"></script>
+</head>
+
+<body>
+{dede:include filename="header_m.htm"/}
+<div class="allpage">
+  <div class="black-fixed iconfont">&#xe60f;</div>
+  <div class="header">
+    <div class="head"> <a href="index.php" title="{dede:global.cfg_webname/}" class="logo"> <img src="/m/skin/images/logo.png"> </a>
+      <div class="nav-btn iconfont"></div>
+      <div class="search_hl iconfont"></div>
+      <div class="search" style="display: block;">
+        <form class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+          <input type="hidden" name="mobile" value="1" />
+          <input type="hidden" name="kwtype" value="0" />
+          <a class="xbtn iconfont" href="javascript:;"></a>
+          <input type="text" name="q" class="search-input" placeholder="请输入搜索关键词">
+          <input type="submit" class="search-btn iconfont" value="">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="content content_new">
+    <div class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <img src="/m/skin/images/banner1.jpg" /> </div>
+          <div class="swiper-slide"> <img src="/m/skin/images/banner2.jpg" /> </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    
+    <div class="common_i_title"> <span>TEAN</span>
+      <h2>专家团队</h2>
+    </div>
+    <div class="product_i common_i_css">
+      <div class="product_i_list">
+        <ul>
+          {dede:arclist row='4' infolen='100' titlelen='32' typeid='42'}
+          <li> <a href="view.php?aid=[field:id/]" title="[field:title/]"> <img src="[field:picname/]" width="310px" height="200px"> <span>[field:title/]</span></a> </li>
+          {/dede:arclist}
+        </ul>
+        <div class="c"></div>
+      </div>
+    </div>
+    <div class="more_i"> {dede:type typeid='42'}<a href="list.php?tid=[field:id/]"> 查看更多 </a>{/dede:type} </div>
+    <div class="common_i_title"> <span>ABOUT US</span>
+      <h2>关于我们</h2>
+    </div>
+    <div class="about_i common_i_css">
+      <div class="about_i_text"> 　　　　{dede:sql sql='Select content from dede_arctype where id=40'} 
+        [field:content  function='cn_substr(html2text(@me),400)'/]...
+        {/dede:sql} </div>
+    </div>
+    <div class="more_i"> {dede:type typeid='40'}<a href="list.php?tid=[field:id/]"> 查看更多 </a>{/dede:type} </div>
+    <div class="common_i_title"> <span>TEAN</span>
+      <h2>核心业务</h2>
+    </div>
+    <div class="product_i common_i_css">
+      <div class="product_i_list">
+        <ul>
+          {dede:arclist row='4' infolen='100' titlelen='32' typeid='16'}
+          <li> <a href="view.php?aid=[field:id/]" title="[field:title/]"> <img src="[field:picname/]" width="310px" height="200px"> <span>[field:title/]</span></a> </li>
+          {/dede:arclist}
+        </ul>
+        <div class="c"></div>
+      </div>
+    </div>
+    <div class="more_i"> {dede:type typeid='16'}<a href="list.php?tid=[field:id/]"> 查看更多 </a>{/dede:type} </div>
+    <div class="common_i_title"> <span>NEWS</span>
+      <h2>新闻资讯</h2>
+    </div>
+    <div class="news_i common_i_css">
+      <div class="news_i_list">
+        <ul>
+          {dede:arclist row='5' infolen='100' titlelen='32' typeid='21'}
+          <li> <a href="view.php?aid=[field:id/]" title="[field:title/]"> <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>[field:title/] </a> </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    <div class="more_i"> {dede:type typeid='21'}<a href="list.php?tid=[field:id/]"> 查看更多 </a>{/dede:type} </div>
+    <div class="baoming">
+      <div class="baoming_title">
+        <h2>联系我们</h2>
+        <span>地址：广东省广州市番禺经济开发区</span> </div>
+      <div class="baoming_c"> <span class="iconfont2">tel:</span> 13978789898 <a href="">立即预约</a> </div>
+    </div>
+    <div class="beian"> 技术支持：<a title="织梦58" target="_blank" href="http://www.dede58.com/">织梦58</a>　 </div>
+  </div>
+  {dede:include filename="footer_m.htm"/} </div>
+</body>
+</html>

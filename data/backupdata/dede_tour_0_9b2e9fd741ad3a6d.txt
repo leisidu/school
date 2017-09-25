@@ -1,0 +1,1 @@
+INSERT INTO `dede_tour` VALUES('3','6','','','','127.0.0.1','04','4','18','1392583200','1397508000','1397421600','','{dede:img text=\'\' width=\'2560\' height=\'816\'} /uploads/140410/1-140410054029426.jpg {/dede:img}','http://player.youku.com/embed/XNTgxODIxMjY4?TB_iframe=true&height=485&width=860');

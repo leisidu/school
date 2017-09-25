@@ -1,0 +1,1 @@
+<div class="zhinan"><b>[field:typename /]硕士<span><a href="/ygss/" target="_blank">MORE</a></span></b></div>

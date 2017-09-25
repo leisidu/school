@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>{dede:global.cfg_webname/}</title>
+<meta content="{dede:global.cfg_keywords/}" name="keywords">
+<meta content="{dede:global.cfg_description/}" name="description">
+<meta name="360-site-verification" content="8b4a67af7884c713c8b364d795d5358d">
+<script charset="utf-8" src="{dede:global.cfg_templets_skin/}/style/v.js"></script><script src="{dede:global.cfg_templets_skin/}/style/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script language="javascript">var user_id = 0;var forwardMethod = '';</script>
+<script src="{dede:global.cfg_templets_skin/}/style/jquery.blockUI.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/jquery.form.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/sidebar-follow-jquery.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/common.js" type="text/javascript"></script>
+
+<link type="text/css" href="{dede:global.cfg_templets_skin/}/style/wenda.css" rel="stylesheet"><link type="text/css" href="{dede:global.cfg_templets_skin/}/style/layout.css" rel="stylesheet"><link href="{dede:global.cfg_templets_skin/}/style/other.css" type="text/css" rel="stylesheet">
+<link rel="icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon">
+</head>
+<body style="overflow-x:hidden;">
+
+{dede:include filename="head.htm"/}
+    <div class="clear"></div>
+    <div class="main">
+        <div class="chuz01">
+            <div class="chuz_l">
+            {dede:arclist row='1'  typeid='1'      flag ='c' }
+			
+				                <h1><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h1>
+                <p class="h1_n">[field:description function="cn_substr(@me,220)"/]... </p>
+                {/dede:arclist}
+                
+								
+                <ul class="chu_list01">
+					{dede:arclist row='10' titlelen='40' typeid='25,29,33,53,57,61,65,69'    noflag ='c' }
+					                    <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+                              {/dede:arclist}         
+                    					
+                </ul>
+            </div>
+			  {dede:arclist row='1'  typeid='1'   imgwidth='235' imgheight='210'   flag ='c' }
+            <div class="chuz_r">[field:image/]</div>
+			 {/dede:arclist}
+            <div class="clear"></div>
+        </div>
+        <div class="chuz02">
+            <div class="chuz02_l">
+                <div class="chuz_guo" style="height: auto;">
+				
+                    <div class="chuz_guo_menu"> 
+                    
+                    {dede:channel row='10'  type ='son' typeid ='1'   }
+		
+        	<a href="[field:typelink/]" target="_blank" class="">[field:typename/]</a>
+																
+				{/dede:channel}																																				</div>
+					
+                    <div class="clear"></div>
+                </div>
+				
+                
+                
+                
+				<div class="countryWrap">
+                
+                
+					<div style="display: none;">
+                    <div class="chu_xiu" style="width: 748px;background: #ffffff;">
+						 <div class="qiantu">
+    {dede:arclist row='1' titlelen='40' typeid='25'   imgwidth='270' imgheight='180'  flag ='c' }                                 <div class="img"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+								 <div class="qiantu_r">
+									<h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+									<p class="h2_neir">[field:description function="cn_substr(@me,400)"/]... </p>
+									<p class="aa"><a href="[field:arcurl/]" target="_blank">了解更多&gt;&gt; </a></p>
+								</div>
+                             {/dede:arclist}
+                         </div>
+							<ul class="list04">
+		                      {dede:arclist row='10' titlelen='40' typeid='25'   noflag ='c' } 						
+					             <li>·　<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+							   {/dede:arclist}									
+							</ul>
+							<div class="clear"></div>
+						</div>
+               <div class="chuz04">
+					<ul class="chuz_paim">
+						<li style="width: 748px;"><a href="/xxjs/" style="width: 718px;">院校推荐<span>MORE</span></a></li>
+					</ul>
+				<div class="chuz_paim01">
+                     <div class="chuz_paim_l">
+                         {dede:arclist row='1' titlelen='40' typeid='34'   imgwidth='210' imgheight='188'  flag ='c' }
+                            [field:image/]
+	                     {/dede:arclist}
+					</div>
+				<div class="chuz_paim_r">
+									{dede:arclist row='1' titlelen='40' typeid='34'   flag ='c' }
+										<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+									    <p class="h3_n">[field:description function="cn_substr(@me,200)"/]... </p>
+									{/dede:arclist}									
+						<ul>
+                          {dede:arclist row='12' titlelen='40' typeid='34'   noflag ='c' }
+							<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+						  {/dede:arclist}				
+						</ul>
+				</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+												
+					</div>
+								
+                                
+                      <!--国家2-美国-->
+                      <div style="display: none;">
+                    <div class="chu_xiu" style="width: 748px;background: #ffffff;">
+						 <div class="qiantu">
+                            {dede:arclist row='1' titlelen='40' typeid='29'   imgwidth='270' imgheight='180'  flag ='c' }                                 <div class="img"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+								 <div class="qiantu_r">
+									<h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+									<p class="h2_neir">[field:description function="cn_substr(@me,400)"/]... </p>
+									<p class="aa"><a href="[field:arcurl/]" target="_blank">了解更多&gt;&gt; </a></p>
+								</div>
+                             {/dede:arclist}
+                         </div>
+							<ul class="list04">
+		                      {dede:arclist row='10' titlelen='40' typeid='29'   noflag ='c' } 						
+					             <li>·　<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+							   {/dede:arclist}									
+							</ul>
+							<div class="clear"></div>
+						</div>
+               <div class="chuz04">
+					<ul class="chuz_paim">
+						<li style="width: 748px;"><a href="/xxjs/" style="width: 718px;">院校推荐<span>MORE</span></a></li>
+					</ul>
+				<div class="chuz_paim01">
+                     <div class="chuz_paim_l">
+                         {dede:arclist row='1' titlelen='40' typeid='34'   imgwidth='210' imgheight='188'  flag ='c' }
+                            [field:image/]
+	                     {/dede:arclist}
+					</div>
+				<div class="chuz_paim_r">
+									{dede:arclist row='1' titlelen='40' typeid='34'   flag ='c' }
+										<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+									    <p class="h3_n">[field:description function="cn_substr(@me,200)"/]... </p>
+									{/dede:arclist}									
+						<ul>
+                          {dede:arclist row='12' titlelen='40' typeid='34'   noflag ='c' }
+							<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+						  {/dede:arclist}				
+						</ul>
+				</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+												
+					</div>          
+                    <!--国家2结束-->	
+                    
+                    <!--国家3-澳大利亚-->
+                     <div style="display: none;">
+                    <div class="chu_xiu" style="width: 748px;background: #ffffff;">
+						 <div class="qiantu">
+                            {dede:arclist row='1' titlelen='40' typeid='33'   imgwidth='270' imgheight='180'  flag ='c' }                                 <div class="img"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+								 <div class="qiantu_r">
+									<h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+									<p class="h2_neir">[field:description function="cn_substr(@me,400)"/]... </p>
+									<p class="aa"><a href="[field:arcurl/]" target="_blank">了解更多&gt;&gt; </a></p>
+								</div>
+                             {/dede:arclist}
+                         </div>
+							<ul class="list04">
+		                      {dede:arclist row='10' titlelen='40' typeid='33'   noflag ='c' } 						
+					             <li>·　<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+							   {/dede:arclist}									
+							</ul>
+							<div class="clear"></div>
+						</div>
+               <div class="chuz04">
+					<ul class="chuz_paim">
+						<li style="width: 748px;"><a href="/xxjs/" style="width: 718px;">院校推荐<span>MORE</span></a></li>
+					</ul>
+				<div class="chuz_paim01">
+                     <div class="chuz_paim_l">
+                         {dede:arclist row='1' titlelen='40' typeid='34'   imgwidth='210' imgheight='188'  flag ='c' }
+                            [field:image/]
+	                     {/dede:arclist}
+					</div>
+				<div class="chuz_paim_r">
+									{dede:arclist row='1' titlelen='40' typeid='34'   flag ='c' }
+										<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+									    <p class="h3_n">[field:description function="cn_substr(@me,200)"/]... </p>
+									{/dede:arclist}									
+						<ul>
+                          {dede:arclist row='12' titlelen='40' typeid='34'   noflag ='c' }
+							<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+						  {/dede:arclist}				
+						</ul>
+				</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+												
+					</div>          
+                    <!--国家3结束-->		
+                    
+                    <!--国家4-日本-->
+                     <div style="display: none;">
+                    <div class="chu_xiu" style="width: 748px;background: #ffffff;">
+						 <div class="qiantu">
+                            {dede:arclist row='1' titlelen='40' typeid='53'   imgwidth='270' imgheight='180'  flag ='c' }                                 <div class="img"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+								 <div class="qiantu_r">
+									<h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+									<p class="h2_neir">[field:description function="cn_substr(@me,400)"/]... </p>
+									<p class="aa"><a href="[field:arcurl/]" target="_blank">了解更多&gt;&gt; </a></p>
+								</div>
+                             {/dede:arclist}
+                         </div>
+							<ul class="list04">
+		                      {dede:arclist row='10' titlelen='40' typeid='53'   noflag ='c' } 						
+					             <li>·　<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+							   {/dede:arclist}									
+							</ul>
+							<div class="clear"></div>
+						</div>
+               <div class="chuz04">
+					<ul class="chuz_paim">
+						<li style="width: 748px;"><a href="/xxjs/" style="width: 718px;">院校推荐<span>MORE</span></a></li>
+					</ul>
+				<div class="chuz_paim01">
+                     <div class="chuz_paim_l">
+                         {dede:arclist row='1' titlelen='40' typeid='34'   imgwidth='210' imgheight='188'  flag ='c' }
+                            [field:image/]
+	                     {/dede:arclist}
+					</div>
+				<div class="chuz_paim_r">
+									{dede:arclist row='1' titlelen='40' typeid='34'   flag ='c' }
+										<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+									    <p class="h3_n">[field:description function="cn_substr(@me,200)"/]... </p>
+									{/dede:arclist}									
+						<ul>
+                          {dede:arclist row='12' titlelen='40' typeid='34'   noflag ='c' }
+							<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+						  {/dede:arclist}				
+						</ul>
+				</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+												
+					</div>          
+                    <!--国家4结束-->	
+                    
+                    <!--国家5-西班牙-->
+                     <div style="display: none;">
+                    <div class="chu_xiu" style="width: 748px;background: #ffffff;">
+						 <div class="qiantu">
+                            {dede:arclist row='1' titlelen='40' typeid='57'   imgwidth='270' imgheight='180'  flag ='c' }                                 <div class="img"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+								 <div class="qiantu_r">
+									<h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+									<p class="h2_neir">[field:description function="cn_substr(@me,400)"/]... </p>
+									<p class="aa"><a href="[field:arcurl/]" target="_blank">了解更多&gt;&gt; </a></p>
+								</div>
+                             {/dede:arclist}
+                         </div>
+							<ul class="list04">
+		                      {dede:arclist row='10' titlelen='40' typeid='57'   noflag ='c' } 						
+					             <li>·　<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+							   {/dede:arclist}									
+							</ul>
+							<div class="clear"></div>
+						</div>
+               <div class="chuz04">
+					<ul class="chuz_paim">
+						<li style="width: 748px;"><a href="/xxjs/" style="width: 718px;">院校推荐<span>MORE</span></a></li>
+					</ul>
+				<div class="chuz_paim01">
+                     <div class="chuz_paim_l">
+                         {dede:arclist row='1' titlelen='40' typeid='34'   imgwidth='210' imgheight='188'  flag ='c' }
+                            [field:image/]
+	                     {/dede:arclist}
+					</div>
+				<div class="chuz_paim_r">
+									{dede:arclist row='1' titlelen='40' typeid='34'   flag ='c' }
+										<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+									    <p class="h3_n">[field:description function="cn_substr(@me,200)"/]... </p>
+									{/dede:arclist}									
+						<ul>
+                          {dede:arclist row='12' titlelen='40' typeid='34'   noflag ='c' }
+							<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+						  {/dede:arclist}				
+						</ul>
+				</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+												
+					</div>          
+                    <!--国家5结束-->	
+                    
+                    <!--国家6-荷兰-->
+                     <div style="display: none;">
+                    <div class="chu_xiu" style="width: 748px;background: #ffffff;">
+						 <div class="qiantu">
+                            {dede:arclist row='1' titlelen='40' typeid='61'   imgwidth='270' imgheight='180'  flag ='c' }                                 <div class="img"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+								 <div class="qiantu_r">
+									<h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+									<p class="h2_neir">[field:description function="cn_substr(@me,400)"/]... </p>
+									<p class="aa"><a href="[field:arcurl/]" target="_blank">了解更多&gt;&gt; </a></p>
+								</div>
+                             {/dede:arclist}
+                         </div>
+							<ul class="list04">
+		                      {dede:arclist row='10' titlelen='40' typeid='61'   noflag ='c' } 						
+					             <li>·　<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+							   {/dede:arclist}									
+							</ul>
+							<div class="clear"></div>
+						</div>
+               <div class="chuz04">
+					<ul class="chuz_paim">
+						<li style="width: 748px;"><a href="/xxjs/" style="width: 718px;">院校推荐<span>MORE</span></a></li>
+					</ul>
+				<div class="chuz_paim01">
+                     <div class="chuz_paim_l">
+                         {dede:arclist row='1' titlelen='40' typeid='34'   imgwidth='210' imgheight='188'  flag ='c' }
+                            [field:image/]
+	                     {/dede:arclist}
+					</div>
+				<div class="chuz_paim_r">
+									{dede:arclist row='1' titlelen='40' typeid='34'   flag ='c' }
+										<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+									    <p class="h3_n">[field:description function="cn_substr(@me,200)"/]... </p>
+									{/dede:arclist}									
+						<ul>
+                          {dede:arclist row='12' titlelen='40' typeid='34'   noflag ='c' }
+							<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+						  {/dede:arclist}				
+						</ul>
+				</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+												
+					</div>          
+                    <!--国家6结束-->	
+                    
+                    <!--国家7-意大利-->
+                     <div style="display: none;">
+                    <div class="chu_xiu" style="width: 748px;background: #ffffff;">
+						 <div class="qiantu">
+                            {dede:arclist row='1' titlelen='40' typeid='65'   imgwidth='270' imgheight='180'  flag ='c' }                                 <div class="img"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+								 <div class="qiantu_r">
+									<h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+									<p class="h2_neir">[field:description function="cn_substr(@me,400)"/]... </p>
+									<p class="aa"><a href="[field:arcurl/]" target="_blank">了解更多&gt;&gt; </a></p>
+								</div>
+                             {/dede:arclist}
+                         </div>
+							<ul class="list04">
+		                      {dede:arclist row='10' titlelen='40' typeid='65'   noflag ='c' } 						
+					             <li>·　<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+							   {/dede:arclist}									
+							</ul>
+							<div class="clear"></div>
+						</div>
+               <div class="chuz04">
+					<ul class="chuz_paim">
+						<li style="width: 748px;"><a href="/xxjs/" style="width: 718px;">院校推荐<span>MORE</span></a></li>
+					</ul>
+				<div class="chuz_paim01">
+                     <div class="chuz_paim_l">
+                         {dede:arclist row='1' titlelen='40' typeid='34'   imgwidth='210' imgheight='188'  flag ='c' }
+                            [field:image/]
+	                     {/dede:arclist}
+					</div>
+				<div class="chuz_paim_r">
+									{dede:arclist row='1' titlelen='40' typeid='34'   flag ='c' }
+										<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+									    <p class="h3_n">[field:description function="cn_substr(@me,200)"/]... </p>
+									{/dede:arclist}									
+						<ul>
+                          {dede:arclist row='12' titlelen='40' typeid='34'   noflag ='c' }
+							<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+						  {/dede:arclist}				
+						</ul>
+				</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+												
+					</div>          
+                    <!--国家7结束-->		
+                     <!--国家8-其它国家-->
+                     <div style="display: none;">
+                    <div class="chu_xiu" style="width: 748px;background: #ffffff;">
+						 <div class="qiantu">
+                            {dede:arclist row='1' titlelen='40' typeid='69'   imgwidth='270' imgheight='180'  flag ='c' }                                 <div class="img"><a href="[field:arcurl/]" target="_blank">[field:image/]</a></div>
+								 <div class="qiantu_r">
+									<h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+									<p class="h2_neir">[field:description function="cn_substr(@me,400)"/]... </p>
+									<p class="aa"><a href="[field:arcurl/]" target="_blank">了解更多&gt;&gt; </a></p>
+								</div>
+                             {/dede:arclist}
+                         </div>
+							<ul class="list04">
+		                      {dede:arclist row='10' titlelen='40' typeid='69'   noflag ='c' } 						
+					             <li>·　<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+							   {/dede:arclist}									
+							</ul>
+							<div class="clear"></div>
+						</div>
+               <div class="chuz04">
+					<ul class="chuz_paim">
+						<li style="width: 748px;"><a href="/xxjs/" style="width: 718px;">院校推荐<span>MORE</span></a></li>
+					</ul>
+				<div class="chuz_paim01">
+                     <div class="chuz_paim_l">
+                         {dede:arclist row='1' titlelen='40' typeid='34'   imgwidth='210' imgheight='188'  flag ='c' }
+                            [field:image/]
+	                     {/dede:arclist}
+					</div>
+				<div class="chuz_paim_r">
+									{dede:arclist row='1' titlelen='40' typeid='34'   flag ='c' }
+										<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+									    <p class="h3_n">[field:description function="cn_substr(@me,200)"/]... </p>
+									{/dede:arclist}									
+						<ul>
+                          {dede:arclist row='12' titlelen='40' typeid='34'   noflag ='c' }
+							<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+						  {/dede:arclist}				
+						</ul>
+				</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+												
+					</div>          
+                    <!--国家8结束-->																												
+				</div>
+				
+            </div>
+			
+			<script type="text/javascript">
+				jQuery(".chuz02_l").SuperSlide({titCell:".chuz_guo_menu a",mainCell:".countryWrap",titOnClassName:"white",autoPlay:true, interTime:5000});
+			</script>
+			
+            <div class="chuz02_r">
+			
+                <div class="bb"> <b>硕士留学</b> </div>
+                <div class="chuz_liu"> <span>专注于美国、英国、加拿大、香港、澳洲的高质量硕士留学申请的中介机构，为硕士学子提供优质的留学中介服务，来自全球名校的优秀顾问，为你提供全程专业指导，以高录取率高成功率...</span> <img src="{dede:global.cfg_templets_skin/}/images/chuz04.jpg"> </div>
+  
+                <div class="bb_01"> <b>在线评估</b> </div>
+                <div class="chuz_pinggu">
+                    <div class="wenda_zixun_01"><img src="{dede:global.cfg_templets_skin/}/images/zixun_a.jpg"></div>
+                    <div class="pg01"><a href="/plus/diy.php?action=post&diyid=1" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/pg02.jpg"></a></div>
+                    <div class="wenda_lianxi"><img width="205" src="{dede:global.cfg_templets_skin/}/images/lianxi.jpg"></div>
+                </div>
+				
+               
+                
+				
+            </div>
+        </div>
+    </div>		
+
+</div>
+
+
+{dede:include filename="footer.htm"/}
+
+</div></body></html>

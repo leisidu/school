@@ -1,0 +1,1 @@
+INSERT INTO `dede_addonsoft` VALUES('79','37','.exe','简体中文','国产软件','共享软件','Win2003,WinXP,Win2000,Win9X','3','http://','http://','未知','','11','0','0','','0.0.0.0','');

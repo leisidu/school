@@ -1,0 +1,1 @@
+<div class="zhinan"><b>[field:typename /]高中<span><a href="/qtgz/" target="_blank">MORE</a></span></b></div>
